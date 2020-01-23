@@ -29,7 +29,7 @@
       "tsc": "tsc",
       "start": "set debug=* && ts-node-dev --respawn --transpileOnly ./src/index.ts --experimental-modules",
       "prod": "tsc && node ./build/app.js",
-      "migration:run": "./node_modules/typeorm/cli.js migration:run"
+      "migration:run": "./node_modules/.bin/ts-node ./node_modules/typeorm/cli.js migration:run"
    }
    
 }
